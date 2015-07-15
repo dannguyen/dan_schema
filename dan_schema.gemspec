@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dan Nguyen"]
   spec.email         = ["dan@danwin.com"]
   spec.description   = %q{A data schema just for Dan Nguyen}
-  spec.summary       = %q{A data schema just for Dan Nguyen}
+  spec.summary       = %q{A data schema just for Dan Nguyen and his data}
   spec.homepage      = "https://github.com/dannguyen/dan_schema"
   spec.license       = "MIT"
 
@@ -19,9 +19,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", ">= 4.2.0"
-  spec.add_development_dependency "bundler", "~> 1.7.9"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
+
+  spec.add_dependency("bundler", ["~> 1.1"])
+  spec.add_runtime_dependency 'activesupport', '~> 4.1', '>= 4.1.0'
+  spec.add_development_dependency 'rake', '~> 10.4', '>= 10.4.2'
+
+  spec.add_development_dependency("rspec", '~> 3.3', ">= 3.3.1")
 
 end
